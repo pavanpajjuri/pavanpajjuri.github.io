@@ -267,7 +267,7 @@ const certifications = {
     // },
     {
       title: "Data Science",
-      // subtitle: "- Alex Aklson",
+      subtitle: "- Alex Aklson",
       logo_path: "ibm_logo.png",
       // certificate_link:
       //   "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
