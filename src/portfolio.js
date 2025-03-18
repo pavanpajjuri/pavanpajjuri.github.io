@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Pavan Pajjuri Portfolio",
     type: "website",
-    // url: "http://ashutoshhathidara.com/",
+    url: "https://pavanpajjuri.github.io/",
   },
 };
 
