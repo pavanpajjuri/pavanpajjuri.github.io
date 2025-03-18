@@ -1,8 +1,10 @@
 .degree-card {
   display: flex;
   width: 100%;
+  max-width: 100%;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .card-title {
@@ -51,13 +53,15 @@
   font-family: "Google Sans Regular";
   font-size: 16px;
   /* color: #212121; */
+  font-family: "Google Sans Regular" !important;
   padding-right: 10px;
   float: right;
 }
 
 .body-content {
-  max-width: inherit;
-  /* width: 100%; */
+  /* max-width: inherit; */
+  width: 100%;
+  font-family: "Google Sans Regular" !important;
   border-radius: 0px 0px 7px 7px;
   padding: 10px;
   justify-content: center;
@@ -68,7 +72,7 @@
 .content-list {
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular" !important;
 }
 
 .card-body {

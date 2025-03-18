@@ -1,11 +1,11 @@
 {
   "data": [
     {
-      "id": "R_kgDOJWL0-g",
-      "name": "mdp-diffusion",
-      "createdAt": "2023-04-13T04:18:19Z",
-      "url": "https://github.com/ashutosh1919/mdp-diffusion",
-      "description": "Text-guided image editing by manipulating diffusion path without any training.",
+      "id": "1",
+      "name": "Fine Tuning LLMs for Conversational-AI",
+      "createdAt": "",
+      "url": "https://github.com/pavanpajjuri/Fine-Tuning-Large-Language-Models-for-Conversational-AI",
+      "description": "Optimized and fine-tuned FLAN-T5 LLM for enhanced dialogue summarization, improving coherence and contextual relevance",
       "isFork": false,
       "languages": [
         {
@@ -13,8 +13,33 @@
           "iconifyClass": "logos-python"
         },
         {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos-jupyter"
+        },
+        {
+          "name": "PyTorch",
+          "iconifyClass": "logos-pytorch"
+        },
+        {
+          "name": "AWS",
+          "iconifyClass": "logos-aws"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GAN from Scratch",
+      "url": "https://github.com/pavanpajjuri/GAN-from-scratch",
+      "description": "Implemented a Generative Adversarial Network (GAN) from scratch in PyTorch for image generation.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "PyTorch",
+          "iconifyClass": "logos-pytorch"
         },
         {
           "name": "Jupyter Notebook",
@@ -23,100 +48,82 @@
       ]
     },
     {
-      "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
-      "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
+      "id": "3",
+      "name": "Text-to-Image GAN from Scratch",
+      "url": "https://github.com/pavanpajjuri/Text-to-Image-GAN-from-scratch",
+      "description": "Developed a Text-to-Image GAN from scratch, generating images from textual descriptions with improved fidelity.",
       "isFork": false,
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
+        },
+        {
+          "name": "PyTorch",
+          "iconifyClass": "logos-pytorch"
+        },
+        {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos-jupyter"
         }
       ]
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOG0_8uQ",
-      "name": "react-awesome-shapes",
-      "createdAt": "2022-02-11T14:50:20Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-      "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOGcPKSQ",
-      "name": "neuro-symbolic-sudoku-solver",
-      "createdAt": "2021-11-26T17:56:07Z",
-      "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
+      "id": "4",
+      "name": "end-to-end AWS Sagemaker deployment for text-to-image GAN",
+      "url": "https://github.com/pavanpajjuri/End-to-End-AWS-SageMaker-Deployment-for-Text-to-Image-GAN",
+      "description": "Built an end-to-end pipeline for training and deploying a Text-to-Image GAN model on AWS SageMaker, enabling scalable and efficient deep learning inference.",
       "isFork": false,
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
+        },
+        {
+          "name": "AWS",
+          "iconifyClass": "logos-aws"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker"
         }
       ]
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "react-liquidswipe",
-      "createdAt": "2021-01-01T08:31:51Z",
-      "url": "https://github.com/ashutosh1919/react-liquidswipe",
-      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
+      "id": "5",
+      "name": "Transformers from Scratch",
+      "url": "https://github.com/pavanpajjuri/Transformers-from-scratch",
+      "description": "Implemented a Transformer architecture from scratch, including self-attention, positional encoding, and training pipeline.",
       "isFork": false,
       "languages": [
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "Python",
+          "iconifyClass": "logos-python"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "PyTorch",
+          "iconifyClass": "logos-pytorch"
+        },
+        {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos-jupyter"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Optimizers from Scratch",
+      "url": "https://github.com/pavanpajjuri/Optimizers-from-Scratch",
+      "description": "Implemented various optimization algorithms from scratch, including Adam, RMSprop, and SGD for deep learning.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos-jupyter"
         }
       ]
     }

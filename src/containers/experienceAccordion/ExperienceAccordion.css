@@ -1,13 +1,17 @@
-.experience-accord {
-  margin: 50px;
+.experience-accordion {
+  width: 100%; /* Ensures full width */
+  margin: 0 auto; /* Centers content */
+  padding: 0; /* Removes extra spacing */
 }
 
-.accord-panel {
-  font-family: "Google Sans Regular";
+.experience-section {
+  background: transparent; /* Ensure no white background */
+  padding: 10px;
 }
 
-@media (max-width: 768px) {
-  .experience-accord {
-    margin: 20px;
-  }
+.experience-section-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
 }

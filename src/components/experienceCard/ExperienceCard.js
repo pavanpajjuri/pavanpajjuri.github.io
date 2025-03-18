@@ -1,113 +1,109 @@
+// import React, { Component } from "react";
+// import "./ExperienceCard.css";
+// import { Fade, Flip } from "react-reveal";
+
+// class ExperienceCard extends Component {
+//   render() {
+//     const experience = this.props.experience;
+//     const theme = this.props.theme;
+
+//     return (
+//       <div className="experience-card">
+//         {experience.logo_path && (
+//           <Flip left duration={2000}>
+//             <div className="experience-logo">
+//               <img
+//                 style={{
+//                   maxWidth: "100%",
+//                   maxHeight: "100%",
+//                   transform: "scale(0.9)",
+//                 }}
+//                 src={require(`../../assets/images/${experience.logo_path}`)}
+//                 alt={experience.company}
+//               />
+//             </div>
+//           </Flip>
+//         )}
+//         <Fade right duration={2000} distance="40px">
+//           <div
+//             className="experience-body"
+//             style={{ width: experience.logo_path ? "90%" : "100%" }}
+//           >
+//             <div
+//               className="experience-header"
+//               style={{ backgroundColor: theme.headerColor }}
+//             >
+//               <div className="experience-header-title">
+//                 <h2 className="experience-title" style={{ color: theme.text }}>
+//                   {experience.title}
+//                 </h2>
+//                 <h3 className="experience-company" style={{ color: theme.text }}>
+//                   {experience.company}
+//                 </h3>
+//                 <h4 className="experience-duration" style={{ color: theme.text }}>
+//                   {experience.duration} | {experience.location}
+//                 </h4>
+//               </div>
+//             </div>
+//             <div className="experience-content">
+//               <p className="experience-description" style={{ color: theme.text }}>
+//                 {experience.description}
+//               </p>
+//             </div>
+//           </div>
+//         </Fade>
+//       </div>
+//     );
+//   }
+// }
+
+// export default ExperienceCard;
+
 import React, { Component } from "react";
 import "./ExperienceCard.css";
-import { Fade } from "react-reveal";
+import { Fade, Flip } from "react-reveal";
 
 class ExperienceCard extends Component {
   render() {
     const experience = this.props.experience;
-    const index = this.props.index;
-    const totalCards = this.props.totalCards;
     const theme = this.props.theme;
     return (
-      <div
-        className="experience-list-item"
-        style={{ marginTop: index === 0 ? 30 : 50 }}
-      >
-        <Fade left duration={2000} distance="40px">
-          <div className="experience-card-logo-div">
-            <img
-              className="experience-card-logo"
-              src={require(`../../assets/images/${experience["logo_path"]}`)}
-              alt=""
-            />
-          </div>
-        </Fade>
-        <div className="experience-card-stepper">
-          <div
-            style={{
-              width: 20,
-              height: 20,
-              backgroundColor: `${theme.headerColor}`,
-              borderRadius: 50,
-              zIndex: 100,
-            }}
-          />
-          {index !== totalCards - 1 && (
-            <div
-              style={{
-                height: 190,
-                width: 2,
-                backgroundColor: `${theme.headerColor}`,
-                position: "absolute",
-                marginTop: 20,
-              }}
-            />
-          )}
-        </div>
+      <div className="experience-card">
+        {/* Logo Outside the Tile */}
+        {experience.logo_path && (
+          <Flip left duration={2000}>
+            <div className="experience-logo-container">
+              <img
+                className="experience-logo"
+                src={require(`../../assets/images/${experience.logo_path}`)}
+                alt={experience.company}
+              />
+            </div>
+          </Flip>
+        )}
+
         <Fade right duration={2000} distance="40px">
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <div
-              className="arrow-left"
-              style={{ borderRight: `10px solid ${theme.body}` }}
-            ></div>
-            <div
-              className="experience-card"
-              style={{ background: `${theme.body}` }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <h3
-                    className="experience-card-title"
-                    style={{ color: theme.text }}
-                  >
-                    {experience["title"]}
-                  </h3>
-                  <p
-                    className="experience-card-company"
-                    style={{ color: theme.text }}
-                  >
-                    <a
-                      href={experience["company_url"]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {experience["company"]}
-                    </a>
-                  </p>
-                </div>
-                <div>
-                  <div className="experience-card-heading-right">
-                    <p
-                      className="experience-card-duration"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {experience["duration"]}
-                    </p>
-                    <p
-                      className="experience-card-location"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {experience["location"]}
-                    </p>
-                  </div>
-                </div>
+          <div className="experience-body">
+            <div className="experience-header">
+              <div className="experience-header-title">
+                <h2 className="experience-title">{experience.title}</h2>
+                <h3 className="experience-subtitle">{experience.company}</h3>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  marginTop: 20,
-                }}
-              >
-                <div className="repo-description" />
-                {experience["description"]}
+              <div className="experience-duration-container">
+                <h3 className="experience-duration">
+                  {experience.duration} | {experience.location}
+                </h3>
               </div>
+            </div>
+
+            <div className="experience-content">
+              <ul className="experience-description-list">
+                {experience.description.map((point, index) => (
+                  <li key={index} className="experience-description-item">
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </Fade>

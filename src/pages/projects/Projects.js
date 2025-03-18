@@ -50,8 +50,14 @@ class Projects extends Component {
           </Fade>
         </div>
         <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
+          {ProjectsData.data.map((repo, index) => {
+            return (
+              <GithubRepoCard
+                key={repo.id || index}
+                repo={repo}
+                theme={theme}
+              />
+            );
           })}
         </div>
         <Button
@@ -87,8 +93,10 @@ class Projects extends Component {
         ) : null}
 
         <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
+          {publications.data.map((pub, index) => {
+            return (
+              <PublicationCard key={pub.id || index} pub={pub} theme={theme} />
+            );
           })}
         </div>
 

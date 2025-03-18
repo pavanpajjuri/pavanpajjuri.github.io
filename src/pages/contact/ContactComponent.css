@@ -1,5 +1,6 @@
 .contact-main {
-  width: 100%;
+  width: 100vw; /* Ensure it takes full viewport width */
+  max-width: 100%;
 }
 
 .basic-contact {
@@ -36,6 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  height: auto; /* Ensures it doesn’t stretch */
 }
 
 .blog-heading-img-div {

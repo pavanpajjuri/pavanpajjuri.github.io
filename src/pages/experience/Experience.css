@@ -1,10 +1,11 @@
 .experience-main {
-  width: 100%;
+  width: 100vw; /* Ensure it takes full viewport width */
+  max-width: 100%;
 }
 
 .basic-experience {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .experience-heading-div {
@@ -15,74 +16,165 @@
   flex: 1;
 }
 
-.experience-heading-img-div {
+.experience-heading-div {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.experience-heading-text-div {
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   text-align: center;
-}
-
-.experience-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  margin-top: 80px;
 }
 
 .experience-heading-text {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 80px;
-}
-
-.experience-heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
   margin-bottom: 10px;
 }
 
-.experience-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
+.experience-heading-sub-text {
+  font-size: 26px;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .experience-heading-text {
+    font-size: 35px;
+  }
+  .experience-heading-sub-text {
+    font-size: 18px;
+    max-width: 80%; /* Ensures readability on smaller screens */
+  }
+}
+
+.experience-body-div {
+  margin-top: 50px;
+}
+
+.experience-section {
+  margin-bottom: 50px;
+}
+
+.experience-section-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 20px auto;
+  background: transparent; /* Remove white background */
+  border-radius: 10px;
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-card-left {
+  width: 130px; /* Adjust logo width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-card-right {
+  width: 80%;
+  text-align: left;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.experience-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.experience-card-right h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.experience-card-right h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.experience-card-right p {
+  font-size: 16px;
+  color: #444;
 }
 
 @media (max-width: 1380px) {
-  .experience-heading-text {
+  .heading-text {
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
-  .experience-heading-sub-text {
-    font-size: 25px;
+  .heading-sub-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .basic-experience {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .experience-card {
+    width: 90%;
   }
 }
 
 @media (max-width: 768px) {
   .experience-heading-text {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .experience-heading-sub-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .experience-heading-div {
     flex-direction: column;
   }
 
-  .experience-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
+  .experience-card {
+    flex-direction: column;
     text-align: center;
+    width: 90%;
+  }
+
+  .experience-card-left {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .experience-card-right {
+    width: 100%;
+  }
+
+  .experience-logo {
+    width: 60px;
+    height: 60px;
   }
 }
