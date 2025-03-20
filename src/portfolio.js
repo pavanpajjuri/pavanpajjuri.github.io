@@ -24,8 +24,8 @@ const greeting = {
   // nickname: "layman_brother",
   subTitle:
     "Data Scientist | ML Engineer | AI Enthusiast. Specializing in deep learning, computer vision, NLP and generative AI. Experienced in fine-tuning CNNs, GANs, LLMs and deploying AI solutions.",
-  // resumeLink:
-  //   "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
+  resumeLink:
+    "https://drive.google.com/file/d/1FQm2RoJJrAC5YLWtCAFHdHiyjf5LNAnn/view?usp=drive_link",
   portfolio_repository: "https://github.com/pavanpajjuri",
   githubProfile: "https://github.com/pavanpajjuri",
 };
@@ -91,12 +91,29 @@ const skills = {
       fileName: "DataScienceImg",
       skills: [
         "⚡ Specializing in AI/ML, with expertise in deep learning, computer vision, NLP, and generative models.",
-        "⚡ Developing and deploying scalable ML models, including CNNs, GANs, LLMs, and reinforcement learning systems.",
+        "⚡ Developing and deploying scalable ML models, including CNNs, GANs, LLMs, Object detection and Recommender systems.",
         "⚡ Architecting end-to-end AI pipelines, integrating MLOps for automation and cloud-based deployment.",
-        "⚡ Advancing model interpretability and decision-making with explainable AI techniques and data-driven insights.",
+        // "⚡ Advancing model interpretability and decision-making with explainable AI techniques and data-driven insights.",
         "⚡ Working at the intersection of AI and big data, leveraging scalable ML frameworks and real-time inference.",
+        "⚡ Creating insightful visualizations and interactive dashboards using Tableau to drive data-driven decision-making.",
       ],
       softwareSkills: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "ion-logo-python",
+          style: {
+            backgroundColor: "transparent",
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "R",
+          fontAwesomeClassname: "simple-icons:r",
+          style: {
+            backgroundColor: "transparent",
+            color: "#276DC3", // R's official blue color
+          },
+        },
         {
           skillName: "Tensorflow",
           fontAwesomeClassname: "logos-tensorflow",
@@ -120,14 +137,6 @@ const skills = {
           },
         },
         {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
           skillName: "Deeplearning",
           imageSrc: "deeplearning_ai_logo.png",
         },
@@ -141,6 +150,27 @@ const skills = {
         {
           skillName: "PostgreSQL",
           fontAwesomeClassname: "simple-icons:postgresql",
+          style: {
+            color: "#336791",
+          },
+        },
+        {
+          skillName: "PySpark",
+          fontAwesomeClassname: "simple-icons:apachespark",
+          style: {
+            color: "#E25A1C",
+          },
+        },
+        {
+          skillName: "Tableau",
+          fontAwesomeClassname: "simple-icons:tableau",
+          style: {
+            color: "#336791",
+          },
+        },
+        {
+          skillName: "PowerBI",
+          fontAwesomeClassname: "simple-icons:powerbi",
           style: {
             color: "#336791",
           },
@@ -213,7 +243,7 @@ const degrees = {
       alt_name: "IITM Madras",
       duration: "2016 - 2021",
       descriptions: [
-        "⚡ Studied core subjects including Data Structures, Algorithms, Machine Learning, and Statistics",
+        "⚡ Completed coursework in Data Structures, Algorithms, Machine Learning, and Statistics, gaining hands-on experience and theoretical knowledge.",
         "⚡ Focused on Deep Learning, Generative AI, and AI-driven automation through advanced coursework and research projects.",
         "⚡ M.Tech Thesis: 3D Vision-based Navigation using Deep Reinforcement Learning (DRL) for autonomous robotic navigation under Dr. V Srinivasa Chakravarthy.",
         "⚡ Graduate Teaching Assistant for 'Applied Programming Lab (Python)', guiding students in Python development and data science applications.",
